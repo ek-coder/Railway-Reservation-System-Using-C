@@ -1,77 +1,59 @@
-Railway Reservation System Using C
+# Railway Reservation System Using C
 
-Introduction
+## 📌 Overview
+The **Railway Reservation System** is a simple C-based console application that allows users to book train tickets, view reservations, and cancel bookings. The system manages seat availability and assigns unique PNR numbers to each reservation.
 
-The Railway Reservation System is a C-based console application that allows users to reserve train tickets, view reservations, and cancel tickets. This system manages train seat bookings, assigns seat numbers, generates unique PNR numbers, and keeps track of reservations.
+## 🛠 Features
+- **Display Available Trains**: View the list of trains with available seats.
+- **Book a Ticket**: Reserve a seat in a selected train.
+- **View All Reservations**: Check all booked tickets.
+- **View Reservations for a Specific Train**: Display reservations for a particular train.
+- **Cancel a Ticket**: Cancel a reservation using the PNR number.
 
-Features
+## 🏗 Technologies Used
+- **Programming Language**: C
+- **Standard Libraries**: `stdio.h`, `stdlib.h`, `string.h`, `time.h`
 
-Display available trains with seat availability.
+## 🚆 Available Trains
+The system includes 10 trains, each with a maximum of 50 seats:
+1. NDLS Express
+2. Chennai Express
+3. UP EXPRESS
+4. Bangalore Express
+5. Haryana Express
+6. Noida Express
+7. Mumbai Express
+8. Vande Bharat
+9. Dehradun Express
+10. Jammu Express
 
-Reserve a seat by providing passenger details.
+## 🏗 How It Works
+1. **Run the program** and choose an option from the menu:
+- Reserve a seat
+- View reservations
+- View reservations for a specific train
+- Cancel a ticket
+- Exit
+2. **Book a Ticket**:
+- Select a train.
+- Enter passenger details (name, gender, food preference).
+- Get assigned a **seat number** and a **PNR number**.
+3. **View Reservations**:
+- See all reservations or filter by a specific train.
+4. **Cancel a Ticket**:
+- Enter the **PNR number** to cancel a booking.
+- The seat is freed up for new reservations.
 
-View all reservations across different trains.
+### 📌 Example Output
+-- Available Trains --
+1. NDLS Express (Available Seats: 50)
+2. Chennai Express (Available Seats: 50)
+...
+Enter the number of the train: 3
+Enter passenger name: Rahul
+Enter gender (M/F): M
+Enter food preference (1 for vegetarian, 2 for non-vegetarian): 1
+Reservation successful. Train: UP EXPRESS, Seat number: 1, PNR: 1234
 
-View reservations for a specific train.
-
-Cancel a ticket using the PNR number.
-
-How It Works
-
-The user selects an option from the menu:
-
-Reserve a seat
-
-View all reservations
-
-View reservations for a specific train
-
-Cancel a ticket
-
-Exit the program
-
-For reservation, the user provides details like name, gender, and food preference.
-
-A unique PNR number is generated for each reservation.
-
-Users can view or cancel their reservation using the PNR number.
-
-Train seat availability updates dynamically.
-
-Technologies Used
-
-Programming Language: C
-
-Data Structures: Arrays and Structs
-
-Randomization: Used for generating unique PNR numbers
-
-How to Compile and Run
-
-# Save the code as railway_reservation.c
-# Open a terminal and navigate to the directory containing the file
-
-# Compile the program
-gcc railway_reservation.c -o railway_reservation
-
-# Run the program
-./railway_reservation
-
-Future Enhancements
-
-Add file handling to store and retrieve reservation data.
-
-Implement user authentication for secured booking.
-
-Introduce a graphical user interface (GUI) for better user experience.
-
-Enable online payment integration.
-
-Author
-
-Developed as a simple C programming project for learning and implementation of basic data structures and console-based application development.
-
-License
-
-This project is open-source and can be modified or distributed freely.
-
+### 📜 License
+This project is open-source and free to use for learning purposes.  
